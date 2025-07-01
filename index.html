@@ -1,106 +1,211 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafeteria Italiana - Autêntico Sabor Italiano</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Merriweather:wght@400;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
+
 <body>
-    <header id="header">
-        <nav class="container">
-            <a href="#inicio" class="logo nav-link-js">Cafeteria Italiana</a>
-            <div class="menu-links">
-                <ul class="grid">
-                    <li><a href="#inicio" class="nav-link nav-link-js active-link">Início</a></li>
-                    <li><a href="#historia" class="nav-link nav-link-js">Nossa História</a></li>
-                    <li><a href="https://drive.google.com/file/d/1ESeFTpYMXYisbJRKqTVuIwbes5lPzHKw/view" target="_blank" class="nav-link">Cardápio (PDF)</a></li>
-                    <li><a href="#nossas-redes" class="nav-link nav-link-js">Restaurantes</a></li>
-                    <li><a href="#contato" class="nav-link nav-link-js">Contato</a></li>
-                </ul>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <img src="logo.png" alt="Garden Italiana Café" class="logo-image">
+            <h2>Cafeteria Italiana</h2>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
             </div>
-            <div class="menu-toggle" id="menu-toggle"><i class="ri-menu-3-line"></i></div>
-        </nav>
-    </header>
+        </div>
+    </div>
+<header id="header">
+    <nav class="container">
+        <div class="menu-links">
+            <ul class="grid">
+                <li><a href="#inicio" class="nav-link nav-link-js active-link">Início</a></li>
+                <li><a href="#historia" class="nav-link nav-link-js">Nossa História</a></li>
+                <li><a href="https://drive.google.com/file/d/1ESeFTpYMXYisbJRKqTVuIwbes5lPzHKw/view" target="_blank"
+                        class="nav-link">Cardápio (PDF)</a></li>
+                <li><a href="#nossas-redes" class="nav-link nav-link-js">Restaurantes</a></li>
+                <li><a href="#contato" class="nav-link nav-link-js">Contato</a></li>
+            </ul>
+        </div>
+        <div class="menu-toggle" id="menu-toggle"><i class="ri-menu-3-line"></i></div>
+    </nav>
+</header>
 
     <main>
         <section id="inicio" class="section hero-banner">
             <div class="hero-image-container">
-                <img src="local.png" alt="Interior da Cafeteria Italiana" class="hero-img-placeholder">
+                <div class="hero-overlay"></div>
+                <div class="floating-elements">
+                    <div class="floating-element" style="--delay: 0s; --duration: 6s;">☕</div>
+                    <div class="floating-element" style="--delay: 2s; --duration: 8s;">🍰</div>
+                    <div class="floating-element" style="--delay: 4s; --duration: 7s;">🥐</div>
+                </div>
             </div>
             <div class="hero-content container">
-                <h1 class="hero-title loaded">Cafeteria Italiana</h1>
-                <p class="hero-subtitle loaded">Autêntico sabor italiano, onde cada xícara conta uma história.</p>
-                <a href="https://drive.google.com/file/d/1ESeFTpYMXYisbJRKqTVuIwbes5lPzHKw/view" target="_blank" class="btn btn-primary loaded">Ver Cardápio Completo</a>
+                <h1 class="hero-title loaded">
+                    <img src="logo.png" alt="Garden Italiana Café" class="hero-logo">
+                </h1>
+                <p class="hero-subtitle loaded">Autêntico sabor italiano, onde cada xícara conta uma história de
+                    tradição e paixão.</p>
+                <div class="hero-buttons loaded">
+                    <a href="https://drive.google.com/file/d/1ESeFTpYMXYisbJRKqTVuIwbes5lPzHKw/view" target="_blank"
+                        class="btn btn-primary">
+                        <span>Ver Cardápio Completo</span>
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                    <a href="#historia" class="btn btn-secondary nav-link-js">
+                        <span>Nossa História</span>
+                    </a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
             </div>
         </section>
 
-        <section id="historia" class="section">
+        <section id="historia" class="section animated-section">
             <div class="container">
                 <div class="section-header">
+                    <div class="section-badge">Tradição</div>
                     <h2 class="section-title">Nossa História</h2>
                     <div class="title-decorator"></div>
                 </div>
                 <div class="historia-content grid">
                     <div class="historia-text">
-                        <p>No oeste de Santa Catarina, em Pinheiro Preto, nasceu Ivanir Volpato, neta de imigrantes italianos apaixonada por culinária. Criada com as receitas da avó, decidiu abrir um restaurante em Rio do Sul com seus filhos.</p>
-                        <p>Apesar dos recursos limitados, o restaurante conquistou a comunidade local com seu calor humano e sabor autêntico. O estabelecimento tornou-se um ponto de encontro onde receitas familiares eram servidas com carinho, proporcionando uma experiência afetiva. Hoje, trinta anos depois, o restaurante é gerido pelos filhos e netos de Ivanir, que preservam e aprimoram as receitas tradicionais.</p>
-                        <p>O restaurante simboliza perseverança e amor pela culinária artesanal, celebrando a herança italiana no Brasil. O sonho de Ivanir continua vivo em cada prato servido, encantando paladares e corações.</p>
+                        <div class="text-block">
+                            <div class="quote-mark">"</div>
+                            <p>No oeste de Santa Catarina, em Pinheiro Preto, nasceu Ivanir Volpato, neta de imigrantes
+                                italianos apaixonada por culinária. Criada com as receitas da avó, decidiu abrir um
+                                restaurante em Rio do Sul com seus filhos.</p>
+                        </div>
+                        <div class="text-block">
+                            <p>Apesar dos recursos limitados, o restaurante conquistou a comunidade local com seu calor
+                                humano e sabor autêntico. O estabelecimento tornou-se um ponto de encontro onde receitas
+                                familiares eram servidas com carinho, proporcionando uma experiência afetiva.</p>
+                        </div>
+                        <div class="text-block">
+                            <p>Hoje, trinta anos depois, o restaurante é gerido pelos filhos e netos de Ivanir, que
+                                preservam e aprimoram as receitas tradicionais. O sonho de Ivanir continua vivo em cada
+                                prato servido, encantando paladares e corações.</p>
+                        </div>
+                        <div class="heritage-stats">
+                            
+                        </div>
                     </div>
                     <div class="historia-image">
-                        <img src="historia.png" alt="Detalhe do ambiente da Cafeteria Italiana">
+                        <div class="image-frame">
+                            <img src="hist1.png"
+                                alt="Detalhe do ambiente da Cafeteria Italiana">
+                            <div class="image-overlay">
+                                <div class="overlay-content">
+                                    <i class="ri-heart-fill"></i>
+                                    <span>Feito com amor</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-         <section id="nossas-redes" class="section"> 
+        <section id="nossas-redes" class="section animated-section">
             <div class="container">
                 <div class="section-header">
+                    <div class="section-badge">Localizações</div>
                     <h2 class="section-title">Nossas Redes de Restaurantes</h2>
                     <div class="title-decorator"></div>
-                    <p class="section-subtitle">Clique para ser direcionado!</p>
+                    <p class="section-subtitle">Clique para ser direcionado e descobrir nossos sabores únicos!</p>
                 </div>
                 <div class="pratos-do-dia-grid">
-                    
+
                     <a href="https://www.instagram.com/litaliana_massas/" target="_blank" class="prato-dia-card-link">
-                        <div class="prato-dia-card"> 
-                            <img src="italiana.massas.png" alt="L'Italiana Empório & Massas" class="prato-dia-img">
+                        <div class="prato-dia-card">
+                            <div class="card-image-container">
+                                <img src="italiana.massas.png" alt="L'Italiana Empório & Massas"
+                                    class="prato-dia-img">
+                                <div class="card-overlay">
+                                    <i class="ri-instagram-line"></i>
+                                </div>
+                            </div>
                             <div class="prato-dia-info">
                                 <h3 class="prato-dia-nome">L'Italiana Empório & Massas</h3>
-                                <p><i class="ri-map-pin-line"></i>Praça Felix Busso Asseburg, 52, Centro, Itajaí</p>
+                                <p class="location"><i class="ri-map-pin-line"></i>Praça Felix Busso Asseburg, 52,
+                                    Centro, Itajaí</p>
+                                <div class="card-footer">
+                                    <span class="visit-text">Visite-nos</span>
+                                    <i class="ri-arrow-right-line"></i>
+                                </div>
                             </div>
                         </div>
                     </a>
 
-                    <a href="https://www.instagram.com/litalianaitajaishopping/" target="_blank" class="prato-dia-card-link">
+                    <a href="https://www.instagram.com/litalianaitajaishopping/" target="_blank"
+                        class="prato-dia-card-link">
                         <div class="prato-dia-card">
-                            <img src="italiana.shopping.png" alt="L'Italiana Shopping" class="prato-dia-img">
+                            <div class="card-image-container">
+                                <img src="italiana.shopping.png" alt="L'Italiana Shopping"
+                                    class="prato-dia-img">
+                                <div class="card-overlay">
+                                    <i class="ri-instagram-line"></i>
+                                </div>
+                            </div>
                             <div class="prato-dia-info">
                                 <h3 class="prato-dia-nome">L'Italiana Shopping</h3>
-                                <p><i class="ri-map-pin-line"></i>Itajaí Shopping, Itajaí</p>
+                                <p class="location"><i class="ri-map-pin-line"></i>Itajaí Shopping, Itajaí</p>
+                                <div class="card-footer">
+                                    <span class="visit-text">Visite-nos</span>
+                                    <i class="ri-arrow-right-line"></i>
+                                </div>
                             </div>
                         </div>
                     </a>
 
-                    <a href="https://www.instagram.com/thesailor.restaurante/" target="_blank" class="prato-dia-card-link">
+                    <a href="https://www.instagram.com/thesailor.restaurante/" target="_blank"
+                        class="prato-dia-card-link">
                         <div class="prato-dia-card">
-                            <img src="sailor.png" alt="The Sailor Restaurante" class="prato-dia-img">
+                            <div class="card-image-container">
+                                <img src="sailor.png" alt="The Sailor Restaurante"
+                                    class="prato-dia-img">
+                                <div class="card-overlay">
+                                    <i class="ri-instagram-line"></i>
+                                </div>
+                            </div>
                             <div class="prato-dia-info">
                                 <h3 class="prato-dia-nome">The Sailor</h3>
-                                <p><i class="ri-map-pin-line"></i>Anexo ao Novotel Itajaí</p>
+                                <p class="location"><i class="ri-map-pin-line"></i>Anexo ao Novotel Itajaí</p>
+                                <div class="card-footer">
+                                    <span class="visit-text">Visite-nos</span>
+                                    <i class="ri-arrow-right-line"></i>
+                                </div>
                             </div>
                         </div>
                     </a>
 
                     <a href="https://www.instagram.com/giardino.delporto/" target="_blank" class="prato-dia-card-link">
                         <div class="prato-dia-card">
-                            <img src="giardino.png" alt="Giardino Delporto" class="prato-dia-img">
+                            <div class="card-image-container">
+                                <img src="giardino.png" alt="Giardino Delporto"
+                                    class="prato-dia-img">
+                                <div class="card-overlay">
+                                    <i class="ri-instagram-line"></i>
+                                </div>
+                            </div>
                             <div class="prato-dia-info">
                                 <h3 class="prato-dia-nome">Giardino Delporto</h3>
-                                <p><i class="ri-map-pin-line"></i>Itajaí Shopping, Itajaí, Último andar</p>
+                                <p class="location"><i class="ri-map-pin-line"></i>Itajaí Shopping, Itajaí, Último andar
+                                </p>
+                                <div class="card-footer">
+                                    <span class="visit-text">Visite-nos</span>
+                                    <i class="ri-arrow-right-line"></i>
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -109,56 +214,117 @@
             </div>
         </section>
 
-        <!-- Seção de Contato Unificada -->
-        <section id="contato" class="section">
+        <section id="contato" class="section animated-section">
             <div class="container">
                 <div class="section-header">
+                    <div class="section-badge">Contato</div>
                     <h2 class="section-title">Entre em Contato</h2>
                     <div class="title-decorator"></div>
                     <p class="section-subtitle">Visite-nos, ligue ou siga nossas redes sociais!</p>
                 </div>
                 <div class="contato-content-unificado grid">
                     <div class="contato-info-unificado">
-                        <h3><i class="ri-map-pin-line"></i> Endereço</h3>
-                        <p>Rua Olímpio Miranda Júnior, 165, Centro, Itajaí - SC</p>
-                        
-                        <h3><i class="ri-phone-line"></i> WhatsApp</h3>
-                        <div class="whatsapp-contato">
-                            <a href="https://api.whatsapp.com/send?phone=5547997541054&text=Olá,%20gostaria%20de%20mais%20informações" target="_blank" class="whatsapp-btn"><i class="ri-whatsapp-line"></i> Fale conosco</a>
+                        <div class="contact-card">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="ri-map-pin-line"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Endereço</h3>
+                                    <p>Rua Olímpio Miranda Júnior, 165, Centro, Itajaí - SC</p>
+                                </div>
+                            </div>
                         </div>
 
-                        <h3><i class="ri-time-line"></i> Horário de Funcionamento</h3>
-                        <p>Segunda a Sexta: 07:00 - 22:00</p>
-                        <p>Sábados: 07:30 - 21:00</p>
-                        <p>Domingos e Feriados: Fechados</p>
+                        <div class="contact-card">
+                            <div class="contact-item">
+                                <div class="contact-icon whatsapp">
+                                    <i class="ri-whatsapp-line"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>WhatsApp</h3>
+                                    <div class="whatsapp-contato">
+                                        <a href="https://api.whatsapp.com/send?phone=5547997541054&text=Olá,%20gostaria%20de%20mais%20informações"
+                                            target="_blank" class="whatsapp-btn">
+                                            <i class="ri-whatsapp-line"></i>
+                                            <span>Fale conosco</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                        <h3><i class="ri-group-line"></i> Siga-nos</h3>
-                        <div class="social-links-contato">
-                            <a href="https://www.instagram.com/italianagardencafe/" target="_blank" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+                        <div class="contact-card">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="ri-time-line"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Horário de Funcionamento</h3>
+                                    <div class="schedule">
+                                        <p><span>Segunda a Sexta:</span> 07:00 - 22:00</p>
+                                        <p><span>Sábados:</span> 07:30 - 21:00</p>
+                                        <p><span>Domingos e Feriados:</span> Fechados</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="ri-group-line"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Siga-nos</h3>
+                                    <div class="social-links-contato">
+                                        <a href="https://www.instagram.com/italianagardencafe/" target="_blank"
+                                            aria-label="Instagram">
+                                            <i class="ri-instagram-line"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="contato-mapa-unificado">
-                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.9042289647023!2d-48.6562639!3d-26.906534399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8cc0c59d24445%3A0x16d28121e97dc7da!2sR.%20Ol%C3%ADmpio%20Miranda%20J%C3%BAnior%2C%20165%20-%20Centro%2C%20Itaja%C3%AD%20-%20SC%2C%2088301-080!5e0!3m2!1spt-BR!2sbr!4v1748456826031!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.9042289647023!2d-48.6562639!3d-26.906534399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8cc0c59d24445%3A0x16d28121e97dc7da!2sR.%20Ol%C3%ADmpio%20Miranda%20J%C3%BAnior%2C%20165%20-%20Centro%2C%20Itaja%C3%AD%20-%20SC%2C%2088301-080!5e0!3m2!1spt-BR!2sbr!4v1748456826031!5m2!1spt-BR!2sbr"
+                                width="100%" height="450" style="border:0; border-radius: 12px;" allowfullscreen=""
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <div class="map-overlay">
+                                <div class="map-pin">
+                                    <i class="ri-map-pin-fill"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer Simplificado -->
     <footer id="footer" class="section-footer-simplificado">
         <div class="container footer-bottom-simplificado">
-            <p>© <span id="current-year">2025</span> Cafeteria Italiana. Todos os direitos reservados.</p>
-            <p>Desenvolvido por Leonardo Rosa</p>
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>© <span id="current-year">2025</span> Cafeteria Italiana. Todos os direitos reservados.</p>
+                    <p>Desenvolvido por Leonardo Rosa</p>
+                </div>
+            </div>
         </div>
     </footer>
 
     <!-- Botão WhatsApp Flutuante -->
     <div class="whatsapp-float">
-        <a href="https://api.whatsapp.com/send?phone=5547997541054&text=Olá,%20gostaria%20de%20mais%20informações" target="_blank">
+        <a href="https://api.whatsapp.com/send?phone=5547997541054&text=Olá,%20gostaria%20de%20mais%20informações"
+            target="_blank">
+            <div class="whatsapp-pulse"></div>
             <i class="ri-whatsapp-line"></i>
         </a>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
